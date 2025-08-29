@@ -272,6 +272,31 @@ header {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
+.team-socials-list {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.team-socials-item {
+  height: 40px;
+  width: 40px;
+}
+
+.team-socials-icon {
+}
+
+.team-link {
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* PORTFOLIO SECTION */
 .portfolio-img {
   padding: 0 auto;
