@@ -187,7 +187,10 @@ header {
   gap: 24px;
 }
 
-.features-title {
+/* style for naming of section Features, Portfolio */
+.features-title,
+.portfolio-name,
+.team-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -196,7 +199,10 @@ header {
   margin-bottom: 8px;
 }
 
-.features-text {
+/* styles for <p> of section Features, Team and Portfolio */
+.features-text,
+.team-position,
+.portfolio-dsr {
   color: #434455;
   font-weight: 400;
   font-size: 16px;
@@ -224,7 +230,9 @@ header {
   gap: 24px;
 }
 
-.team-title {
+/* стилі title для section Team and Portfolio */
+.team-title,
+.portfolio-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -242,23 +250,6 @@ header {
   /* shadow for the box li */
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-
-.team-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: #2e2f42;
-  letter-spacing: 0.02em;
-  margin-bottom: 8px;
-}
-
-.team-position {
-  color: #434455;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
 /* PORTFOLIO SECTION */
@@ -283,32 +274,6 @@ header {
   margin-bottom: 0;
 }
 
-.portfolio-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  color: #2e2f42;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  margin-bottom: 72px;
-}
-
-.portfolio-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: #2e2f42;
-  letter-spacing: 0.02em;
-  margin-bottom: 8px;
-}
-
-.portfolio-dsr {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
 /* #endregion */
 /* #region Footer */
 footer {
