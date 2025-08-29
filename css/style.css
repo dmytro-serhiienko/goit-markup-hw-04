@@ -98,7 +98,6 @@ header {
   font-style: normal;
 }
 
-/* start home work 3 */
 .cntct-list {
   display: flex;
   gap: 40px;
@@ -122,8 +121,8 @@ header {
 }
 
 /* #endregion */
-/* #region Main */
 
+/* #region HERO */
 .hero {
   background-color: #2e2f42;
   width: 100%;
@@ -263,7 +262,6 @@ header {
 }
 
 /* PORTFOLIO SECTION */
-
 .portfolio-img {
   padding: 0 auto;
 }
