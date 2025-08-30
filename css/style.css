@@ -352,7 +352,17 @@ footer {
   max-width: 264px;
 }
 
+.footer .container {
+  display: flex;
+}
+
+.footer-content-container {
+  margin-right: 120px;
+}
+
 .footer-social-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-social-title {
@@ -361,6 +371,7 @@ footer {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 
 .footer-social-list {
@@ -369,16 +380,23 @@ footer {
 }
 
 .footer-social-item {
-  display: flex;
+  /* ширина та висота самої кнопки з синім фоном */
+  width: 40px;
+  height: 40px;
 }
 
 .footer-social-link {
+  background-color: #4d5ae5;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* застосування 100% ширини заданої для кнопки 40px */
+  width: 100%;
+  height: 100%;
 }
 
 .footer-social-icon {
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
 }
 /* #endregion */
