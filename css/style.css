@@ -125,6 +125,7 @@ header {
 /* #region HERO */
 .hero {
   background-color: #2e2f42;
+  /* Gradient and image for hero section */
   background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
     url(/images/office-image.png);
 
