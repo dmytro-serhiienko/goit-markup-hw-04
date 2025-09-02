@@ -180,7 +180,8 @@ header {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/office-image.png);
+    url(../images/office-work.jpg);
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
