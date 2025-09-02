@@ -36,6 +36,11 @@ header {
 }
 
 /* #region Header */
+.header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .header .container {
   display: flex;
   justify-content: space-between;
@@ -80,17 +85,21 @@ header {
   gap: 40px;
 }
 
-.nav-items:hover {
+.nav-item:nth-child(1) .nav-link {
   color: #404bbf;
 }
 
-.nav-items:focus {
+.nav-link:hover {
+  color: #404bbf;
+}
+
+.nav-link:focus {
   color: #404bbf;
   text-decoration: underline;
 }
 
 /* підкреслення */
-.nav-items {
+.nav-link {
   /* псевдоелемент прив’язаний */
   position: relative;
   text-decoration: none;
@@ -101,7 +110,7 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-items::after {
+.nav-link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -115,17 +124,20 @@ header {
   background-color: #404bbf;
   border-radius: 2px;
   transition: width 0.3s ease;
+  bottom: -1px;
 }
 
-.nav-items:hover::after,
-.nav-items:focus::after {
+.nav-link:hover::after,
+.nav-link:focus::after {
   /* ефект наводження */
   width: 100%;
+  bottom: -1px;
 }
 
-.nav-items.current::after {
+.nav-link.current::after {
   /* завжди активна лінія для поточної сторінки */
   width: 100%;
+  bottom: -1px;
 }
 /* _________ */
 
@@ -163,9 +175,12 @@ header {
 .hero {
   background-color: #2e2f42;
   /* Gradient and image for hero section */
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
+  /* backgroun photo and gradient */
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
     url(/images/office-image.png);
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -304,7 +319,6 @@ header {
 }
 
 .team-item {
-  background-color: #ffffff;
   border-radius: 0 0 4px 4px;
 
   /* shadow for the box li */
@@ -326,6 +340,7 @@ header {
 }
 
 .team-socials-icon {
+  fill: #f4f4fd;
 }
 
 .team-link {
@@ -344,6 +359,11 @@ header {
 .team-link:hover {
   background-color: #404bbf;
 }
+
+.team-link:focus {
+  background-color: #404bbf;
+}
+
 /* контейнер для overlay */
 .info-box {
   position: relative;
@@ -367,9 +387,7 @@ header {
   background-color: #4d5ae5;
 
   /* внутрішні відступи тексту */
-  padding-top: 40px;
-  padding-right: 32px;
-  padding-left: 32px;
+  padding: 40px 32px;
 
   /* зміщення на 100% в ліво */
   transform: translateY(100%);
@@ -405,13 +423,14 @@ header {
   margin-bottom: 0;
 }
 
-/* added for HomeWork 4 */
+.portfolio-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .portfolio-item:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
-
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* #endregion */
@@ -449,6 +468,7 @@ footer {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-content-container {
@@ -498,6 +518,11 @@ footer {
   background-color: #31d0aa;
 }
 
+.footer-social-link:focus {
+  background-color: #31d0aa;
+}
+
 .footer-social-icon {
+  fill: #f4f4fd;
 }
 /* #endregion */
