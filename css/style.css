@@ -360,6 +360,7 @@ header {
 }
 
 /* контейнер для overlay */
+
 .info-box {
   position: relative;
   overflow: hidden;
@@ -384,10 +385,10 @@ header {
   /* внутрішні відступи тексту */
   padding: 40px 32px;
 
-  /* зміщення на 100% в ліво */
+  /* зміщення на 100% (ховаємо) */
   transform: translateY(100%);
 
-  /* анімація */
+  /* анімація - перехід*/
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -422,10 +423,12 @@ header {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover {
+/* тінь при наведенні та інш. */
+.portfolio-item:hover,
+.portfolio-item:active,
+.portfolio-item:focus {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  background: #fff;
 }
 
 /* #endregion */
